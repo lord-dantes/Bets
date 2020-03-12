@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="03d3e159-aafa-48e3-ae51-e309e4758dd0" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ProjectId" id="1YmEEpkueg2IjAUhYQnId8HFdct" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/assets/images" />
+    <property name="settings.editor.selected.configurable" value="reference.idesettings.emmet.css" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\betsproject\assets\images" />
+      <recent name="D:\betsproject\assets\icons" />
+      <recent name="D:\betsproject\assets\icons\asidemenu" />
+      <recent name="D:\betsproject\assets\icons\flags" />
+    </key>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="03d3e159-aafa-48e3-ae51-e309e4758dd0" name="Default Changelist" comment="" />
+      <created>1583539260905</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1583539260905</updated>
+      <workItem from="1583539262114" duration="13248000" />
+      <workItem from="1583579688397" duration="2708000" />
+      <workItem from="1583582416464" duration="18000" />
+      <workItem from="1583582435149" duration="4000" />
+      <workItem from="1583582465271" duration="30000" />
+      <workItem from="1583582504890" duration="10000" />
+      <workItem from="1583582516653" duration="11078000" />
+      <workItem from="1583683459558" duration="599000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="740" y="276" key="FileChooserDialogImpl" timestamp="1583582535606">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="740" y="276" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1583582535606" />
+    <state x="491" y="164" key="SettingsEditor" timestamp="1583539970415">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="491" y="164" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1583539970415" />
+  </component>
+</project>

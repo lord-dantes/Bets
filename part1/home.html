@@ -1,0 +1,139 @@
+<html lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Bets</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Bets</title>
+        <link rel="stylesheet" href="assets/styles/reset.css">
+        <link rel="stylesheet" href="assets/styles/index.css">
+    </head>
+    <body class="m-color">
+
+        <div class="home-layout">
+
+            <header class="header">
+                <div class="header__left  flex-v-centered">
+                    <div class="header__logo-desktop">
+                        <a href="#" class="header__logo-link">
+                            <img src="./assets/icons/logo_2.svg" alt="desktop-logo">
+                        </a>
+                    </div>
+                    <div class="header__logo-mobile">
+                        <a href="#" class="header__logo-link">
+                            <img src="./assets/icons/logo_m.svg" alt="mobile-logo">
+                        </a>
+                    </div>
+                </div>
+                <div class="overlay"></div>
+                <div class="header__right flex-v-centered">
+                    <div class="header__auth">
+                        <div class="header__user-image-wrapper icon--size"><img class="user-image-avatar" src="./assets/icons/ic_login_1.svg" alt="user"/></div>
+                        <div class="header__auth-controls">
+                            <a href="" class="auth__login">Войти</a>
+                            <span class="slash"> / </span>
+                            <a href="" class=" auth__register">Регистрация</a>
+                        </div>
+                    </div>
+                    <div class="header__time-zone dropdown">
+<!--                        <div class="header__tz-select">-->
+                        <div class="dropdown__icon-clock grey-effect"><img src="./assets/icons/clock.svg" alt="clock-icon"/></div>
+                        <div class="tz-select__default" id="js-tz-toogle">15:41 (GMT+1)</div>
+                        <ul class="tz-select__dropdown dropdown--base m-color tz-close" id="js-tz-dropdown">
+
+                            <li class="tz-select__item dropdown--item-style grey-effect" data-tz="16:41 (GMT+2)">16:41 (GMT+2)</li>
+                            <li class="tz-select__item dropdown--item-style grey-effect" data-tz="17:41 (GMT+3)">17:41 (GMT+3)</li>
+                            <li class="tz-select__item dropdown--item-style grey-effect" data-tz="18:41 (GMT+4)">18:41 (GMT+4)</li>
+                            <li class="tz-select__item dropdown--item-style grey-effect" data-tz="19:41 (GMT+5)">19:41 (GMT+5)</li>
+                            <li class="tz-select__item dropdown--item-style grey-effect" data-tz="20:41 (GMT+6)">20:41 (GMT+6)</li>
+                        </ul>
+<!--                        </div>-->
+
+                    </div>
+
+                    <div class="header__intl dropdown">
+
+                        <div class="intl__default icon--size"><img  id="js-intl-toggle" src="./assets/icons/flags/ru.svg" alt="flag-default"/></div>
+                        <ul class="intl__dropdown dropdown--base m-color tz-close" id="js-intl-dropdown">
+
+                            <li class="intl__item dropdown--item-style" data-intl="./assets/icons/flags/de.svg"><img class="icon--size" src="./assets/icons/flags/de.svg" alt="flag-default"/><span>DE</span></li>
+                            <li class="intl__item dropdown--item-style" data-intl="./assets/icons/flags/dk.svg"><img class="icon--size" src="./assets/icons/flags/dk.svg" alt="flag-default"/><span>DK</span></li>
+                            <li class="intl__item dropdown--item-style" data-intl="./assets/icons/flags/en.svg"><img class="icon--size" src="./assets/icons/flags/en.svg" alt="flag-default"/><span>EN</span></li>
+                            <li class="intl__item dropdown--item-style" data-intl="./assets/icons/flags/es.svg"><img class="icon--size" src="./assets/icons/flags/es.svg" alt="flag-default"/><span>ES</span></li>
+                            <li class="intl__item dropdown--item-style" data-intl="./assets/icons/flags/gr.svg"><img class="icon--size" src="./assets/icons/flags/gr.svg" alt="flag-default"/><span>GR</span></li>
+                            <li class="intl__item dropdown--item-style" data-intl="./assets/icons/flags/it.svg"><img class="icon--size" src="./assets/icons/flags/it.svg" alt="flag-default"/><span>IT</span></li>
+                            <li class="intl__item dropdown--item-style" data-intl="./assets/icons/flags/pt.svg"><img class="icon--size" src="./assets/icons/flags/pt.svg" alt="flag-default"/><span>PT</span></li>
+                            <li class="intl__item dropdown--item-style" data-intl="./assets/icons/flags/se.svg"><img class="icon--size" src="./assets/icons/flags/se.svg" alt="flag-default"/><span>SE</span></li>
+                            <li class="intl__item dropdown--item-style" data-intl="./assets/icons/flags/ru.svg"><img class="icon--size" src="./assets/icons/flags/ru.svg" alt="flag-default"/><span>RU</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </header>
+
+            <main class="wrapper">
+                <div class="slider"></div>
+                <div class="info">
+                    <div class="info__logo">
+                        <img src="./assets/icons/logo_2.svg" alt="logo">
+                    </div>
+                    <div class="info__partners">
+                        <a href="#" class="partners__link">
+                            <img src="./assets/images/content_ic_1.svg" alt="">
+                        </a>
+                        <a href="#" class="partners__link">
+                            <img src="./assets/images/content_ic_2.svg" alt="">
+                        </a>
+                        <a href="#" class="partners__link">
+                            <img src="./assets/images/content_ic_3.svg" alt="">
+                        </a>
+                        <a href="#" class="partners__link">
+                            <img src="./assets/images/content_ic_4.svg" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="legal">
+                    <ul class="legal__navigate">
+                        <li>
+                            <a href="#">Terms of use</a>
+                        </li>
+                        <li>
+                            <a href="#">Privacy Policy</a>
+                        </li>
+                        <li>
+                            <a href="#">Legal restrictions</a>
+                        </li>
+                        <li>
+                            <a href="#">Responsible Gambling</a>
+                        </li>
+                        <li>
+                            <a href="#">Terms of Personal Data</a>
+                        </li>
+                        <li>
+                            <a href="#">Processing</a>
+                        </li>
+                    </ul>
+                    <div class="legal__content">
+                        <h1 class="legal__header">
+                            Header H1
+                        </h1>
+                        <div class="legal__text">
+                            <p>
+                                This website is owned and managed by CopyBet UK Ltd. CopyBet UK is licensed by the British Gambling Commission, operating license No. 000-053774-N-330744-002. The company's registered address is 3rd Floor, 120 Baker Street, London W1U 6TU. The company's business address is Office 116, N.1 Royal Exchange, London, EC3V 3DG.
+                            </p>
+                            <p>Any operations involving the copying of bets or specific strategies imply actual risks of losing of money. There is no absolutely safe strategy, which excludes risks of accidental losses, as well as no one can guarantee the profit or the total absence of loss. You shouldn't invest or risk the money that you aren't ready to lose.</p>
+                            <p>Working with the copy betting platform involves significant risks as there is always a possibility of losing money. Results of your work may differ from the provided examples, the experience you have, and theoretical calculations, while the previous results can't guarantee the same in the future. Once the risk factor when copying bets is considered as high, you should take into account all actual risks while working with such platform. You should assess all risks that are involved in operation of the copy betting platform in accordance with your purposes and financial possibilities, and only then start working. If you don't have additional funds that you can afford to lose, you shouldn't start working with the platform.</p>
+                            <p>Operation of the copy betting platform involves risks of using computer technologies and data flow systems. When you start working with the platform, you should realize that such risks as hardware and software failures and inaccurate external data flows provided by third party service providers, may seriously affect your activities. Neither the Company in general nor any of the Company's employees bear any responsibility for any bugs or failures when there is no proof of willful unlawful acts. The Company is in no way liable for mechanical or any other damage to communication lines, system or database errors, as well as any other failures, which are not caused by the Company's activity.</p>
+                            <p>This website is owned and managed by CopyBet UK Ltd. CopyBet UK is licensed by the British Gambling Commission, operating license No. 000-053774-N-330744-002. The company's registered address is 3rd Floor, 120 Baker Street, London W1U 6TU. The company's business address is Office 116, N.1 Royal Exchange, London, EC3V 3DG.</p>
+                            <p>Operation of the copy betting platform involves risks of using computer technologies and data flow systems. When you start working with the platform, you should realize that such risks as hardware and software failures and inaccurate external data flows provided by third party service providers, may seriously affect your activities. Neither the Company in general nor any of the Company's employees bear any responsibility for any bugs or failures when there is no proof of willful unlawful acts. The Company is in no way liable for mechanical or any other damage to communication lines, system or database errors, as well as any other failures, which are not caused by the Company's activity.</p>
+                        </div>
+                    </div>
+                </div>
+            </main>
+            <footer class="footer">
+                <div class="footer__content">Copyright © 2020 </div>
+            </footer>
+        </div>
+        <script src="./assets/js/index.js"></script>
+    </body>
+
+</html>

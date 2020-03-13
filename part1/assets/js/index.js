@@ -54,3 +54,17 @@ function handleCloseOnoverlayClick() {
         toogTZleSelect()
     }
 }
+// modal
+// window.onload = function() {
+//     var authActionModal = document.getElementsByClassName('auth__login');
+//     var authModal = document.getElementById('modal-access');
+//     var authCloseModal = document.getElementsByClassName('modal-header');
+//     authActionModal[0].onclick = function() {
+//         authModal.classList.add("show");
+//         authModal.classList.add("active-modal");
+//     };
+//     authCloseModal[0].onclick = function() {
+//         authModal.classList.remove("show");
+//         authModal.classList.remove("active-modal");
+//     };
+// }

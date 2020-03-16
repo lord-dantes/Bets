@@ -9,344 +9,404 @@
     <title>Document | Document</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
-    <link href="./styles.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./assets/styles/index.css">
+    <link href="./styles.css" rel="stylesheet">
 
 </head>
 
 <body>
+    <!--  -->
     <header class="header">
-        <div class="header__burger-left burger-menu js-open-menu">
-            <img src="./assets/ic_m_l_1.svg" alt="burger" />
-        </div>
-        <div class="header__menu main-menu">
-            <div class="main-menu__item">
-                <a class="main-menu__link" href="#">
-                    <img class="main-menu__image" src="./assets/ic_m_r_1.svg" alt="photo" />
-                    <span class="main-menu__title">Deposit</span>
+        <div class="header__left  flex-v-centered">
+            <div class="header__logo-desktop">
+                <a href="#" class="header__logo-link">
+                    <img src="./assets/icons/logo_2.svg" alt="desktop-logo">
                 </a>
             </div>
-            <div class="main-menu__item">
-                <a class="main-menu__link" href="#">
-                    <img class="main-menu__image" src="./assets/ic_m_r_2.svg" alt="photo" />
-                    <span class="main-menu__title">Withdraw</span>
-                </a>
-            </div>
-            <div class="main-menu__item">
-                <a class="main-menu__link" href="#">
-                    <img class="main-menu__image" src="./assets/ic_m_r_3.svg" alt="photo" />
-                    <span class="main-menu__title">Buy Token</span>
-                </a>
-            </div>
-            <div class="main-menu__item">
-                <a class="main-menu__link" href="#">
-                    <img class="main-menu__image" src="./assets/ic_m_r_4.svg" alt="photo" />
-                    <span class="main-menu__title">Document</span>
-                </a>
-            </div>
-            <div class="main-menu__item">
-                <a class="main-menu__link" href="#">
-                    <img class="main-menu__image" src="./assets/ic_m_r_5.svg" alt="photo" />
-                    <span class="main-menu__title">Payment</span>
-                </a>
-            </div>
-            <div class="main-menu__item">
-                <a class="main-menu__link" href="#">
-                    <img class="main-menu__image" src="./assets/ic_m_r_6.svg" alt="photo" />
-                    <span class="main-menu__title">Index</span>
-                </a>
-            </div>
-            <div class="main-menu__item">
-                <a class="main-menu__link" href="#">
-                    <img class="main-menu__image" src="./assets/ic_m_r_7.svg" alt="photo" />
-                    <span class="main-menu__title">My bets</span>
+            <div class="header__logo-mobile">
+                <a href="#" class="header__logo-link">
+                    <img src="./assets/icons/logo_m.svg" alt="mobile-logo">
                 </a>
             </div>
         </div>
-        <div class="header__burger-right burger-menu js-open-menu"></div>
+        <div class="overlay"></div>
+        <div class="header__right flex-v-centered">
+            <div class="header__auth">
+                <div class="header__auth-controls">
+                    <a class="login_link" data-toggle="modal" data-target="#modal-access"><span class="ic_login"><img src="./assets/icons/ic_login_1.svg"></span><span class="name_login">Имя пользователя</span></a>
+                </div>
+            </div>
+            <div class="header__time-zone dropdown">
+                <!--                        <div class="header__tz-select">-->
+                <div class="dropdown__icon-clock grey-effect"><img src="./assets/icons/clock.svg" alt="clock-icon" /></div>
+                <div class="tz-select__default" id="js-tz-toogle">15:41 (GMT+1)</div>
+                <ul class="tz-select__dropdown dropdown--base m-color tz-close" id="js-tz-dropdown">
+
+                    <li class="tz-select__item dropdown--item-style grey-effect" data-tz="16:41 (GMT+2)">16:41 (GMT+2)</li>
+                    <li class="tz-select__item dropdown--item-style grey-effect" data-tz="17:41 (GMT+3)">17:41 (GMT+3)</li>
+                    <li class="tz-select__item dropdown--item-style grey-effect" data-tz="18:41 (GMT+4)">18:41 (GMT+4)</li>
+                    <li class="tz-select__item dropdown--item-style grey-effect" data-tz="19:41 (GMT+5)">19:41 (GMT+5)</li>
+                    <li class="tz-select__item dropdown--item-style grey-effect" data-tz="20:41 (GMT+6)">20:41 (GMT+6)</li>
+                </ul>
+                <!--                        </div>-->
+
+            </div>
+
+            <div class="header__intl dropdown">
+
+                <div class="intl__default icon--size"><img id="js-intl-toggle" src="./assets/icons/flags/ru.svg" alt="flag-default" /></div>
+                <ul class="intl__dropdown dropdown--base m-color tz-close" id="js-intl-dropdown">
+
+                    <li class="intl__item dropdown--item-style" data-intl="./assets/icons/flags/de.svg"><img class="icon--size" src="./assets/icons/flags/de.svg" alt="flag-default" /><span>DE</span></li>
+                    <li class="intl__item dropdown--item-style" data-intl="./assets/icons/flags/dk.svg"><img class="icon--size" src="./assets/icons/flags/dk.svg" alt="flag-default" /><span>DK</span></li>
+                    <li class="intl__item dropdown--item-style" data-intl="./assets/icons/flags/en.svg"><img class="icon--size" src="./assets/icons/flags/en.svg" alt="flag-default" /><span>EN</span></li>
+                    <li class="intl__item dropdown--item-style" data-intl="./assets/icons/flags/es.svg"><img class="icon--size" src="./assets/icons/flags/es.svg" alt="flag-default" /><span>ES</span></li>
+                    <li class="intl__item dropdown--item-style" data-intl="./assets/icons/flags/gr.svg"><img class="icon--size" src="./assets/icons/flags/gr.svg" alt="flag-default" /><span>GR</span></li>
+                    <li class="intl__item dropdown--item-style" data-intl="./assets/icons/flags/it.svg"><img class="icon--size" src="./assets/icons/flags/it.svg" alt="flag-default" /><span>IT</span></li>
+                    <li class="intl__item dropdown--item-style" data-intl="./assets/icons/flags/pt.svg"><img class="icon--size" src="./assets/icons/flags/pt.svg" alt="flag-default" /><span>PT</span></li>
+                    <li class="intl__item dropdown--item-style" data-intl="./assets/icons/flags/se.svg"><img class="icon--size" src="./assets/icons/flags/se.svg" alt="flag-default" /><span>SE</span></li>
+                    <li class="intl__item dropdown--item-style" data-intl="./assets/icons/flags/ru.svg"><img class="icon--size" src="./assets/icons/flags/ru.svg" alt="flag-default" /><span>RU</span></li>
+                </ul>
+            </div>
+        </div>
     </header>
-
-    <div class="modal m-closed">
-        <form action="" class="login__form form">
-            <div class="form__wrapper">
-                <h2 class="register__title title">Регисрация</h2>
-                <div class="login__form-item">
-                    <label for="register-input" class="login__form-label">Имя</label>
-                    <input id="register-input" type="text" class="register__form-label input" />
-                    <p class="error-text">Not valid name</p>
+    <div class="main-content">
+        <div class="header">
+            <div class="header__burger-left burger-menu js-open-menu">
+                <img src="./assets/ic_m_l_1.svg" alt="burger" />
+            </div>
+            <div class="header__menu main-menu">
+                <div class="main-menu__item">
+                    <a class="main-menu__link" href="#">
+                        <img class="main-menu__image" src="./assets/ic_m_r_1.svg" alt="photo" />
+                        <span class="main-menu__title">Deposit</span>
+                    </a>
                 </div>
-                <div class="login__form-item">
-                    <label for="login-input-pw" class="login__form-label">Email</label>
-                    <input id="login-input-pw" type="email" class="login__form-label input" />
-                    <p class="error-text">Not valid password</p>
+                <div class="main-menu__item">
+                    <a class="main-menu__link" href="#">
+                        <img class="main-menu__image" src="./assets/ic_m_r_2.svg" alt="photo" />
+                        <span class="main-menu__title">Withdraw</span>
+                    </a>
                 </div>
-                <div class="login__form-item">
-                    <label for="register-input-pw" class="login__form-label">Пароль</label>
-                    <input id="register-input-pw" type="password" class="login__form-label input" />
-                    <p class="error-text">Not valid password</p>
+                <div class="main-menu__item">
+                    <a class="main-menu__link" href="#">
+                        <img class="main-menu__image" src="./assets/ic_m_r_3.svg" alt="photo" />
+                        <span class="main-menu__title">Buy Token</span>
+                    </a>
                 </div>
-                <div class="login__form-item">
-                    <label for="register-input-cpw" class="login__form-label">Подтвердите пароль</label>
-                    <input id="register-input-cpw" type="password" class="login__form-label input" />
-                    <p class="error-text">Not valid password</p>
+                <div class="main-menu__item">
+                    <a class="main-menu__link" href="#">
+                        <img class="main-menu__image" src="./assets/ic_m_r_4.svg" alt="photo" />
+                        <span class="main-menu__title">Document</span>
+                    </a>
                 </div>
-                <div class="register__bottom-controls">
-                    <button class="btn register__submit-btn" type="submit">Регистрация</button>
-                    <div class="register__socials socials">
-                        <div class="socials__vk social-img-block"><img class="socials__image" src="./assets/socials/vk.svg" alt="icon" /></div>
-                        <div class="socials__fb social-img-block"><img class="socials__image" src="./assets/socials/facebook.svg" alt="icon" /></div>
-                        <div class="socials__instagram social-img-block"><img class="socials__image" src="./assets/socials/instagram.svg" alt="icon" /></div>
-                        <div class="socials__odnoklasniki social-img-block"><img class="socials__image" src="./assets/socials/odnoklassniki.svg" alt="icon" /></div>
-                    </div>
+                <div class="main-menu__item">
+                    <a class="main-menu__link" href="#">
+                        <img class="main-menu__image" src="./assets/ic_m_r_5.svg" alt="photo" />
+                        <span class="main-menu__title">Payment</span>
+                    </a>
+                </div>
+                <div class="main-menu__item">
+                    <a class="main-menu__link" href="#">
+                        <img class="main-menu__image" src="./assets/ic_m_r_6.svg" alt="photo" />
+                        <span class="main-menu__title">Index</span>
+                    </a>
+                </div>
+                <div class="main-menu__item">
+                    <a class="main-menu__link" href="#">
+                        <img class="main-menu__image" src="./assets/ic_m_r_7.svg" alt="photo" />
+                        <span class="main-menu__title">My bets</span>
+                    </a>
                 </div>
             </div>
-        </form>
-        <!--        <form action="" class="login__form form">-->
-        <!--          <div class="form__wrapper">-->
-        <!--            <h2 class="login__title title">Войти</h2>-->
-        <!--            <div class="login__form-item">-->
-        <!--              <label for="login-input" class="login__form-label">Имя</label>-->
-        <!--              <input id="login-input" type="text" class="login__form-label input"/>-->
-        <!--              <p class="error-text">Not valid name</p>-->
-        <!--            </div>-->
-        <!--            <div class="login__form-item">-->
-        <!--              <label for="login-input-pw" class="login__form-label">Пароль</label>-->
-        <!--              <input id="login-input-pw" type="password" class="login__form-label input"/>-->
-        <!--              <p class="error-text">Not valid password</p>-->
-        <!--            </div>-->
-        <!--            <div class="login__send-controls">-->
+            <div class="header__burger-right burger-menu js-open-menu"></div>
+        </div>
 
-        <!--              <div class="login__remember-block">-->
-        <!--                <input type="checkbox" id="radio" class="login__remember-radio-btn">-->
-        <!--                <label for="radio" class="login__remember-label">Запомнить меня</label>-->
-        <!--              </div>-->
-        <!--              <button class="btn login__submit-btn" type="submit">Войти</button>-->
-        <!--            </div>-->
-        <!--          </div>-->
-        <!--        </form>-->
-    </div>
+        <div class="modal m-closed">
+            <form action="" class="login__form form">
+                <div class="form__wrapper">
+                    <h2 class="register__title title">Регисрация</h2>
+                    <div class="login__form-item">
+                        <label for="register-input" class="login__form-label">Имя</label>
+                        <input id="register-input" type="text" class="register__form-label input" />
+                        <p class="error-text">Not valid name</p>
+                    </div>
+                    <div class="login__form-item">
+                        <label for="login-input-pw" class="login__form-label">Email</label>
+                        <input id="login-input-pw" type="email" class="login__form-label input" />
+                        <p class="error-text">Not valid password</p>
+                    </div>
+                    <div class="login__form-item">
+                        <label for="register-input-pw" class="login__form-label">Пароль</label>
+                        <input id="register-input-pw" type="password" class="login__form-label input" />
+                        <p class="error-text">Not valid password</p>
+                    </div>
+                    <div class="login__form-item">
+                        <label for="register-input-cpw" class="login__form-label">Подтвердите пароль</label>
+                        <input id="register-input-cpw" type="password" class="login__form-label input" />
+                        <p class="error-text">Not valid password</p>
+                    </div>
+                    <div class="register__bottom-controls">
+                        <button class="btn register__submit-btn" type="submit">Регистрация</button>
+                        <div class="register__socials socials">
+                            <div class="socials__vk social-img-block"><img class="socials__image" src="./assets/socials/vk.svg" alt="icon" /></div>
+                            <div class="socials__fb social-img-block"><img class="socials__image" src="./assets/socials/facebook.svg" alt="icon" /></div>
+                            <div class="socials__instagram social-img-block"><img class="socials__image" src="./assets/socials/instagram.svg" alt="icon" /></div>
+                            <div class="socials__odnoklasniki social-img-block"><img class="socials__image" src="./assets/socials/odnoklassniki.svg" alt="icon" /></div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+            <!--        <form action="" class="login__form form">-->
+            <!--          <div class="form__wrapper">-->
+            <!--            <h2 class="login__title title">Войти</h2>-->
+            <!--            <div class="login__form-item">-->
+            <!--              <label for="login-input" class="login__form-label">Имя</label>-->
+            <!--              <input id="login-input" type="text" class="login__form-label input"/>-->
+            <!--              <p class="error-text">Not valid name</p>-->
+            <!--            </div>-->
+            <!--            <div class="login__form-item">-->
+            <!--              <label for="login-input-pw" class="login__form-label">Пароль</label>-->
+            <!--              <input id="login-input-pw" type="password" class="login__form-label input"/>-->
+            <!--              <p class="error-text">Not valid password</p>-->
+            <!--            </div>-->
+            <!--            <div class="login__send-controls">-->
 
-    <main class="user-layout layout">
-        <div>
+            <!--              <div class="login__remember-block">-->
+            <!--                <input type="checkbox" id="radio" class="login__remember-radio-btn">-->
+            <!--                <label for="radio" class="login__remember-label">Запомнить меня</label>-->
+            <!--              </div>-->
+            <!--              <button class="btn login__submit-btn" type="submit">Войти</button>-->
+            <!--            </div>-->
+            <!--          </div>-->
+            <!--        </form>-->
+        </div>
 
-            <div class="aside left js-menu">
-                <div class="scroll">
+        <main class="user-layout layout">
+            <div>
+
+                <div class="aside left js-menu">
+                    <div class="scroll">
+                        <div class="aside__nav-item">
+                            <a class="aside__nav-link" href="#">
+                                <img class="aside__image" alt="photo" src="./assets/ic_m_l_2.svg" />
+                                <span class="aside__title">Football</span>
+                                <div class="aside__numbers">19999</div>
+                            </a>
+                        </div>
+                        <div class="aside__nav-item">
+                            <a class="aside__nav-link" href="#">
+                                <img class="aside__image" alt="photo" src="./assets/ic_m_l_3.svg" />
+                                <span class="aside__title">Basketball</span>
+                                <div class="aside__numbers">19999</div>
+                            </a>
+                        </div>
+                        <div class="aside__nav-item">
+                            <a class="aside__nav-link" href="#">
+                                <img class="aside__image" alt="photo" src="./assets/ic_m_l_4.svg" />
+                                <span class="aside__title">American Football</span>
+                                <div class="aside__numbers">19999</div>
+                            </a>
+                        </div>
+                        <div class="aside__nav-item">
+                            <a class="aside__nav-link" href="#">
+                                <img class="aside__image" alt="photo" src="./assets/ic_m_l_5.svg" />
+                                <span class="aside__title">Tennis</span>
+                                <div class="aside__numbers">19999</div>
+                            </a>
+                        </div>
+                        <div class="aside__nav-item">
+                            <a class="aside__nav-link" href="#">
+                                <img class="aside__image" alt="photo" src="./assets/ic_m_l_6.svg" />
+                                <span class="aside__title">Volleyball</span>
+                                <div class="aside__numbers">19999</div>
+                            </a>
+                        </div>
+                        <div class="aside__nav-item">
+                            <a class="aside__nav-link" href="#">
+                                <img class="aside__image" alt="photo" src="./assets/ic_m_l_7.svg" />
+                                <span class="aside__title">Hockey</span>
+                                <div class="aside__numbers">19999</div>
+                            </a>
+                        </div>
+                        <div class="aside__nav-item">
+                            <a class="aside__nav-link" href="#">
+                                <img class="aside__image" alt="photo" src="./assets/ic_m_l_8.svg" />
+                                <span class="aside__title">Handball</span>
+                                <div class="aside__numbers">19999</div>
+                            </a>
+                        </div>
+                        <div class="aside__nav-item">
+                            <a class="aside__nav-link" href="#">
+                                <img class="aside__image" alt="photo" src="./assets/ic_m_l_9.svg" />
+                                <span class="aside__title">Cricket</span>
+                                <div class="aside__numbers">19999</div>
+                            </a>
+                        </div>
+                        <div class="aside__nav-item">
+                            <a class="aside__nav-link" href="#">
+                                <img class="aside__image" alt="photo" src="./assets/ic_m_l_10.svg" />
+                                <span class="aside__title">Cyber sport</span>
+                                <div class="aside__numbers">19999</div>
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="aside right js-menu">
                     <div class="aside__nav-item">
                         <a class="aside__nav-link" href="#">
-                            <img class="aside__image" alt="photo" src="./assets/ic_m_l_2.svg" />
+                            <img class="aside__image" alt="photo" src="./assets/ic_m_r_1.svg" />
                             <span class="aside__title">Football</span>
-                            <div class="aside__numbers">19999</div>
                         </a>
                     </div>
                     <div class="aside__nav-item">
                         <a class="aside__nav-link" href="#">
-                            <img class="aside__image" alt="photo" src="./assets/ic_m_l_3.svg" />
+                            <img class="aside__image" alt="photo" src="./assets/ic_m_r_2.svg" />
                             <span class="aside__title">Basketball</span>
-                            <div class="aside__numbers">19999</div>
                         </a>
                     </div>
                     <div class="aside__nav-item">
                         <a class="aside__nav-link" href="#">
-                            <img class="aside__image" alt="photo" src="./assets/ic_m_l_4.svg" />
+                            <img class="aside__image" alt="photo" src="./assets/ic_m_r_3.svg" />
                             <span class="aside__title">American Football</span>
-                            <div class="aside__numbers">19999</div>
                         </a>
                     </div>
                     <div class="aside__nav-item">
                         <a class="aside__nav-link" href="#">
-                            <img class="aside__image" alt="photo" src="./assets/ic_m_l_5.svg" />
+                            <img class="aside__image" alt="photo" src="./assets/ic_m_r_4.svg" />
                             <span class="aside__title">Tennis</span>
-                            <div class="aside__numbers">19999</div>
                         </a>
                     </div>
                     <div class="aside__nav-item">
                         <a class="aside__nav-link" href="#">
-                            <img class="aside__image" alt="photo" src="./assets/ic_m_l_6.svg" />
+                            <img class="aside__image" alt="photo" src="./assets/ic_m_r_5.svg" />
                             <span class="aside__title">Volleyball</span>
-                            <div class="aside__numbers">19999</div>
                         </a>
                     </div>
                     <div class="aside__nav-item">
                         <a class="aside__nav-link" href="#">
-                            <img class="aside__image" alt="photo" src="./assets/ic_m_l_7.svg" />
+                            <img class="aside__image" alt="photo" src="./assets/ic_m_r_6.svg" />
                             <span class="aside__title">Hockey</span>
-                            <div class="aside__numbers">19999</div>
                         </a>
                     </div>
                     <div class="aside__nav-item">
                         <a class="aside__nav-link" href="#">
-                            <img class="aside__image" alt="photo" src="./assets/ic_m_l_8.svg" />
+                            <img class="aside__image" alt="photo" src="./assets/ic_m_r_7.svg" />
                             <span class="aside__title">Handball</span>
-                            <div class="aside__numbers">19999</div>
                         </a>
                     </div>
-                    <div class="aside__nav-item">
-                        <a class="aside__nav-link" href="#">
-                            <img class="aside__image" alt="photo" src="./assets/ic_m_l_9.svg" />
-                            <span class="aside__title">Cricket</span>
-                            <div class="aside__numbers">19999</div>
-                        </a>
-                    </div>
+
                     <div class="aside__nav-item">
                         <a class="aside__nav-link" href="#">
                             <img class="aside__image" alt="photo" src="./assets/ic_m_l_10.svg" />
                             <span class="aside__title">Cyber sport</span>
-                            <div class="aside__numbers">19999</div>
                         </a>
                     </div>
-
+                </div>
+                <div class="content">
+                    <h1>Header H1</h1>
+                    <p>
+                        Working with the copy betting platform involves significant risks as there is always a possibility of losing money. Results of your work may differ from the provided examples, the experience you have, and theoretical calculations, while the previous results
+                        can't guarantee the same in the future. Once the risk factor when copying bets is considered as high, you should take into account all actual risks while working with such platform. You should assess all risks that are involved in
+                        operation of the copy betting platform in accordance with your purposes and financial possibilities, and only then start working. If you don't have additional funds that you can afford to lose, you shouldn't start working with the
+                        platform.
+                    </p>
+                    <p>
+                        Any operations involving the copying of bets or specific strategies imply actual risks of losing of money. There is no absolutely safe strategy, which excludes risks of accidental losses, as well as no one can guarantee the profit or the total absence
+                        of loss. You shouldn't invest or risk the money that you aren't ready to lose.
+                    </p>
+                    <p>
+                        Any operations involving the copying of bets or specific strategies imply actual risks of losing of money. There is no absolutely safe strategy, which excludes risks of accidental losses, as well as no one can guarantee the profit or the total absence
+                        of loss. You shouldn't invest or risk the money that you aren't ready to lose.
+                    </p>
+                    <p>
+                        Any operations involving the copying of bets or specific strategies imply actual risks of losing of money. There is no absolutely safe strategy, which excludes risks of accidental losses, as well as no one can guarantee the profit or the total absence
+                        of loss. You shouldn't invest or risk the money that you aren't ready to lose.
+                    </p>
+                    <p>
+                        Any operations involving the copying of bets or specific strategies imply actual risks of losing of money. There is no absolutely safe strategy, which excludes risks of accidental losses, as well as no one can guarantee the profit or the total absence
+                        of loss. You shouldn't invest or risk the money that you aren't ready to lose.
+                    </p>
+                    <p>
+                        Any operations involving the copying of bets or specific strategies imply actual risks of losing of money. There is no absolutely safe strategy, which excludes risks of accidental losses, as well as no one can guarantee the profit or the total absence
+                        of loss. You shouldn't invest or risk the money that you aren't ready to lose.
+                    </p>
+                    <p>
+                        Any operations involving the copying of bets or specific strategies imply actual risks of losing of money. There is no absolutely safe strategy, which excludes risks of accidental losses, as well as no one can guarantee the profit or the total absence
+                        of loss. You shouldn't invest or risk the money that you aren't ready to lose.
+                    </p>
+                    <p>
+                        Any operations involving the copying of bets or specific strategies imply actual risks of losing of money. There is no absolutely safe strategy, which excludes risks of accidental losses, as well as no one can guarantee the profit or the total absence
+                        of loss. You shouldn't invest or risk the money that you aren't ready to lose.
+                    </p>
+                    <p>
+                        Any operations involving the copying of bets or specific strategies imply actual risks of losing of money. There is no absolutely safe strategy, which excludes risks of accidental losses, as well as no one can guarantee the profit or the total absence
+                        of loss. You shouldn't invest or risk the money that you aren't ready to lose.
+                    </p>
+                    <p>
+                        Any operations involving the copying of bets or specific strategies imply actual risks of losing of money. There is no absolutely safe strategy, which excludes risks of accidental losses, as well as no one can guarantee the profit or the total absence
+                        of loss. You shouldn't invest or risk the money that you aren't ready to lose.
+                    </p>
+                    <p>
+                        Any operations involving the copying of bets or specific strategies imply actual risks of losing of money. There is no absolutely safe strategy, which excludes risks of accidental losses, as well as no one can guarantee the profit or the total absence
+                        of loss. You shouldn't invest or risk the money that you aren't ready to lose.
+                    </p>
+                    <p>
+                        Any operations involving the copying of bets or specific strategies imply actual risks of losing of money. There is no absolutely safe strategy, which excludes risks of accidental losses, as well as no one can guarantee the profit or the total absence
+                        of loss. You shouldn't invest or risk the money that you aren't ready to lose.
+                    </p>
+                    <p>
+                        Any operations involving the copying of bets or specific strategies imply actual risks of losing of money. There is no absolutely safe strategy, which excludes risks of accidental losses, as well as no one can guarantee the profit or the total absence
+                        of loss. You shouldn't invest or risk the money that you aren't ready to lose.
+                    </p>
+                    <p>
+                        This website is owned and managed by CopyBet UK Ltd. CopyBet UK is licensed by the British Gambling Commission, operating license No. 000-053774-N-330744-002. The company's registered address is 3rd Floor, 120 Baker Street, London W1U 6TU. The company's
+                        business address is Office 116, N.1 Royal Exchange, London, EC3V 3DG.
+                    </p>
+                    <p>
+                        Operation of the copy betting platform involves risks of using computer technologies and data flow systems. When you start working with the platform, you should realize that such risks as hardware and software failures and inaccurate external data flows
+                        provided by third party service providers, may seriously affect your activities. Neither the Company in general nor any of the Company's employees bear any responsibility for any bugs or failures when there is no proof of willful unlawful
+                        acts. The Company is in no way liable for mechanical or any other damage to communication lines, system or database errors, as well as any other failures, which are not caused by the Company's activity.
+                    </p>
+                    <p>
+                        This website is owned and managed by CopyBet UK Ltd. CopyBet UK is licensed by the British Gambling Commission, operating license No. 000-053774-N-330744-002. The company's registered address is 3rd Floor, 120 Baker Street, London W1U 6TU. The company's
+                        business address is Office 116, N.1 Royal Exchange, London, EC3V 3DG.
+                    </p>
+                    <p>
+                        Operation of the copy betting platform involves risks of using computer technologies and data flow systems. When you start working with the platform, you should realize that such risks as hardware and software failures and inaccurate external data flows
+                        provided by third party service providers, may seriously affect your activities. Neither the Company in general nor any of the Company's employees bear any responsibility for any bugs or failures when there is no proof of willful unlawful
+                        acts. The Company is in no way liable for mechanical or any other damage to communication lines, system or database errors, as well as any other failures, which are not caused by the Company's activity.
+                    </p>
+                    <p>
+                        This website is owned and managed by CopyBet UK Ltd. CopyBet UK is licensed by the British Gambling Commission, operating license No. 000-053774-N-330744-002. The company's registered address is 3rd Floor, 120 Baker Street, London W1U 6TU. The company's
+                        business address is Office 116, N.1 Royal Exchange, London, EC3V 3DG.
+                    </p>
+                    <p>
+                        Operation of the copy betting platform involves risks of using computer technologies and data flow systems. When you start working with the platform, you should realize that such risks as hardware and software failures and inaccurate external data flows
+                        provided by third party service providers, may seriously affect your activities. Neither the Company in general nor any of the Company's employees bear any responsibility for any bugs or failures when there is no proof of willful unlawful
+                        acts. The Company is in no way liable for mechanical or any other damage to communication lines, system or database errors, as well as any other failures, which are not caused by the Company's activity.
+                    </p>
+                    <p>
+                        This website is owned and managed by CopyBet UK Ltd. CopyBet UK is licensed by the British Gambling Commission, operating license No. 000-053774-N-330744-002. The company's registered address is 3rd Floor, 120 Baker Street, London W1U 6TU. The company's
+                        business address is Office 116, N.1 Royal Exchange, London, EC3V 3DG.
+                    </p>
+                    <p>
+                        Operation of the copy betting platform involves risks of using computer technologies and data flow systems. When you start working with the platform, you should realize that such risks as hardware and software failures and inaccurate external data flows
+                        provided by third party service providers, may seriously affect your activities. Neither the Company in general nor any of the Company's employees bear any responsibility for any bugs or failures when there is no proof of willful unlawful
+                        acts. The Company is in no way liable for mechanical or any other damage to communication lines, system or database errors, as well as any other failures, which are not caused by the Company's activity.
+                    </p>
                 </div>
             </div>
-            <div class="aside right js-menu">
-                <div class="aside__nav-item">
-                    <a class="aside__nav-link" href="#">
-                        <img class="aside__image" alt="photo" src="./assets/ic_m_r_1.svg" />
-                        <span class="aside__title">Football</span>
-                    </a>
-                </div>
-                <div class="aside__nav-item">
-                    <a class="aside__nav-link" href="#">
-                        <img class="aside__image" alt="photo" src="./assets/ic_m_r_2.svg" />
-                        <span class="aside__title">Basketball</span>
-                    </a>
-                </div>
-                <div class="aside__nav-item">
-                    <a class="aside__nav-link" href="#">
-                        <img class="aside__image" alt="photo" src="./assets/ic_m_r_3.svg" />
-                        <span class="aside__title">American Football</span>
-                    </a>
-                </div>
-                <div class="aside__nav-item">
-                    <a class="aside__nav-link" href="#">
-                        <img class="aside__image" alt="photo" src="./assets/ic_m_r_4.svg" />
-                        <span class="aside__title">Tennis</span>
-                    </a>
-                </div>
-                <div class="aside__nav-item">
-                    <a class="aside__nav-link" href="#">
-                        <img class="aside__image" alt="photo" src="./assets/ic_m_r_5.svg" />
-                        <span class="aside__title">Volleyball</span>
-                    </a>
-                </div>
-                <div class="aside__nav-item">
-                    <a class="aside__nav-link" href="#">
-                        <img class="aside__image" alt="photo" src="./assets/ic_m_r_6.svg" />
-                        <span class="aside__title">Hockey</span>
-                    </a>
-                </div>
-                <div class="aside__nav-item">
-                    <a class="aside__nav-link" href="#">
-                        <img class="aside__image" alt="photo" src="./assets/ic_m_r_7.svg" />
-                        <span class="aside__title">Handball</span>
-                    </a>
-                </div>
-
-                <div class="aside__nav-item">
-                    <a class="aside__nav-link" href="#">
-                        <img class="aside__image" alt="photo" src="./assets/ic_m_l_10.svg" />
-                        <span class="aside__title">Cyber sport</span>
-                    </a>
-                </div>
-            </div>
-            <div class="content">
-                <h1>Header H1</h1>
-                <p>
-                    Working with the copy betting platform involves significant risks as there is always a possibility of losing money. Results of your work may differ from the provided examples, the experience you have, and theoretical calculations, while the previous results
-                    can't guarantee the same in the future. Once the risk factor when copying bets is considered as high, you should take into account all actual risks while working with such platform. You should assess all risks that are involved in
-                    operation of the copy betting platform in accordance with your purposes and financial possibilities, and only then start working. If you don't have additional funds that you can afford to lose, you shouldn't start working with the
-                    platform.
-                </p>
-                <p>
-                    Any operations involving the copying of bets or specific strategies imply actual risks of losing of money. There is no absolutely safe strategy, which excludes risks of accidental losses, as well as no one can guarantee the profit or the total absence
-                    of loss. You shouldn't invest or risk the money that you aren't ready to lose.
-                </p>
-                <p>
-                    Any operations involving the copying of bets or specific strategies imply actual risks of losing of money. There is no absolutely safe strategy, which excludes risks of accidental losses, as well as no one can guarantee the profit or the total absence
-                    of loss. You shouldn't invest or risk the money that you aren't ready to lose.
-                </p>
-                <p>
-                    Any operations involving the copying of bets or specific strategies imply actual risks of losing of money. There is no absolutely safe strategy, which excludes risks of accidental losses, as well as no one can guarantee the profit or the total absence
-                    of loss. You shouldn't invest or risk the money that you aren't ready to lose.
-                </p>
-                <p>
-                    Any operations involving the copying of bets or specific strategies imply actual risks of losing of money. There is no absolutely safe strategy, which excludes risks of accidental losses, as well as no one can guarantee the profit or the total absence
-                    of loss. You shouldn't invest or risk the money that you aren't ready to lose.
-                </p>
-                <p>
-                    Any operations involving the copying of bets or specific strategies imply actual risks of losing of money. There is no absolutely safe strategy, which excludes risks of accidental losses, as well as no one can guarantee the profit or the total absence
-                    of loss. You shouldn't invest or risk the money that you aren't ready to lose.
-                </p>
-                <p>
-                    Any operations involving the copying of bets or specific strategies imply actual risks of losing of money. There is no absolutely safe strategy, which excludes risks of accidental losses, as well as no one can guarantee the profit or the total absence
-                    of loss. You shouldn't invest or risk the money that you aren't ready to lose.
-                </p>
-                <p>
-                    Any operations involving the copying of bets or specific strategies imply actual risks of losing of money. There is no absolutely safe strategy, which excludes risks of accidental losses, as well as no one can guarantee the profit or the total absence
-                    of loss. You shouldn't invest or risk the money that you aren't ready to lose.
-                </p>
-                <p>
-                    Any operations involving the copying of bets or specific strategies imply actual risks of losing of money. There is no absolutely safe strategy, which excludes risks of accidental losses, as well as no one can guarantee the profit or the total absence
-                    of loss. You shouldn't invest or risk the money that you aren't ready to lose.
-                </p>
-                <p>
-                    Any operations involving the copying of bets or specific strategies imply actual risks of losing of money. There is no absolutely safe strategy, which excludes risks of accidental losses, as well as no one can guarantee the profit or the total absence
-                    of loss. You shouldn't invest or risk the money that you aren't ready to lose.
-                </p>
-                <p>
-                    Any operations involving the copying of bets or specific strategies imply actual risks of losing of money. There is no absolutely safe strategy, which excludes risks of accidental losses, as well as no one can guarantee the profit or the total absence
-                    of loss. You shouldn't invest or risk the money that you aren't ready to lose.
-                </p>
-                <p>
-                    Any operations involving the copying of bets or specific strategies imply actual risks of losing of money. There is no absolutely safe strategy, which excludes risks of accidental losses, as well as no one can guarantee the profit or the total absence
-                    of loss. You shouldn't invest or risk the money that you aren't ready to lose.
-                </p>
-                <p>
-                    Any operations involving the copying of bets or specific strategies imply actual risks of losing of money. There is no absolutely safe strategy, which excludes risks of accidental losses, as well as no one can guarantee the profit or the total absence
-                    of loss. You shouldn't invest or risk the money that you aren't ready to lose.
-                </p>
-                <p>
-                    This website is owned and managed by CopyBet UK Ltd. CopyBet UK is licensed by the British Gambling Commission, operating license No. 000-053774-N-330744-002. The company's registered address is 3rd Floor, 120 Baker Street, London W1U 6TU. The company's
-                    business address is Office 116, N.1 Royal Exchange, London, EC3V 3DG.
-                </p>
-                <p>
-                    Operation of the copy betting platform involves risks of using computer technologies and data flow systems. When you start working with the platform, you should realize that such risks as hardware and software failures and inaccurate external data flows
-                    provided by third party service providers, may seriously affect your activities. Neither the Company in general nor any of the Company's employees bear any responsibility for any bugs or failures when there is no proof of willful unlawful
-                    acts. The Company is in no way liable for mechanical or any other damage to communication lines, system or database errors, as well as any other failures, which are not caused by the Company's activity.
-                </p>
-                <p>
-                    This website is owned and managed by CopyBet UK Ltd. CopyBet UK is licensed by the British Gambling Commission, operating license No. 000-053774-N-330744-002. The company's registered address is 3rd Floor, 120 Baker Street, London W1U 6TU. The company's
-                    business address is Office 116, N.1 Royal Exchange, London, EC3V 3DG.
-                </p>
-                <p>
-                    Operation of the copy betting platform involves risks of using computer technologies and data flow systems. When you start working with the platform, you should realize that such risks as hardware and software failures and inaccurate external data flows
-                    provided by third party service providers, may seriously affect your activities. Neither the Company in general nor any of the Company's employees bear any responsibility for any bugs or failures when there is no proof of willful unlawful
-                    acts. The Company is in no way liable for mechanical or any other damage to communication lines, system or database errors, as well as any other failures, which are not caused by the Company's activity.
-                </p>
-                <p>
-                    This website is owned and managed by CopyBet UK Ltd. CopyBet UK is licensed by the British Gambling Commission, operating license No. 000-053774-N-330744-002. The company's registered address is 3rd Floor, 120 Baker Street, London W1U 6TU. The company's
-                    business address is Office 116, N.1 Royal Exchange, London, EC3V 3DG.
-                </p>
-                <p>
-                    Operation of the copy betting platform involves risks of using computer technologies and data flow systems. When you start working with the platform, you should realize that such risks as hardware and software failures and inaccurate external data flows
-                    provided by third party service providers, may seriously affect your activities. Neither the Company in general nor any of the Company's employees bear any responsibility for any bugs or failures when there is no proof of willful unlawful
-                    acts. The Company is in no way liable for mechanical or any other damage to communication lines, system or database errors, as well as any other failures, which are not caused by the Company's activity.
-                </p>
-                <p>
-                    This website is owned and managed by CopyBet UK Ltd. CopyBet UK is licensed by the British Gambling Commission, operating license No. 000-053774-N-330744-002. The company's registered address is 3rd Floor, 120 Baker Street, London W1U 6TU. The company's
-                    business address is Office 116, N.1 Royal Exchange, London, EC3V 3DG.
-                </p>
-                <p>
-                    Operation of the copy betting platform involves risks of using computer technologies and data flow systems. When you start working with the platform, you should realize that such risks as hardware and software failures and inaccurate external data flows
-                    provided by third party service providers, may seriously affect your activities. Neither the Company in general nor any of the Company's employees bear any responsibility for any bugs or failures when there is no proof of willful unlawful
-                    acts. The Company is in no way liable for mechanical or any other damage to communication lines, system or database errors, as well as any other failures, which are not caused by the Company's activity.
-                </p>
-            </div>
-        </div>
-    </main>
+        </main>
+    </div>
     <footer class="footer">
         <p class="footer__content">
             Copyright © 2020 Ru
         </p>
     </footer>
+    <script src="./assets/js/jquery.min.js"></script>
+    <script src="assets/js/index.js"></script>
     <script src="index.js"></script>
 </body>
 

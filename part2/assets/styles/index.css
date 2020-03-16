@@ -291,6 +291,7 @@
 }
 
 .m-color {
+    list-style: none;
     background: #060a13;
 }
 

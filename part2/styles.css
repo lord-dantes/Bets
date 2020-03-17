@@ -88,6 +88,8 @@ div.header{
 
   box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 }
+.aside.left{top:160px;}
+.aside.right{top:160px;}
 .aside.left:hover {
   width: 340px;
   -webkit-transition: 0.1s ease-in-out;
@@ -421,6 +423,7 @@ top-menu
 @media screen and (min-width: 992px) {
   .aside.left {
     width: 80px;
+    top: 160px;
   }
   .form__wrapper {
     width: 80%;

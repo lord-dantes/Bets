@@ -6,10 +6,11 @@ toggleOpenMenus.forEach((btn, idx) => {
 });
 
 function handlOpenMenu(idx) {
-	let one = document.querySelectorAll('.menu-open');
-	let two = document.querySelectorAll('.b-r-open');
-	if (!one.length == 0) {one[0].classList.remove('menu-open');};
-	if (!two.length == 0) {two[0].classList.remove('b-r-open');};
+	let toOpenModal = document.querySelectorAll('.menu-open');
+	let OpenModal = document.querySelectorAll('.b-r-open');
+	if (!toOpenModal.length == 0) {toOpenModal[0].classList.remove('menu-open');};
+	if (!OpenModal.length == 0) {OpenModal[0].classList.remove('b-r-open');};
+
   menus[idx].classList.toggle("menu-open");
   toggleOpenMenus[idx].classList.toggle("b-r-open");
 }

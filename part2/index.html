@@ -29,49 +29,7 @@
                 </a>
             </div>
         </div>
-        <div class="overlay"></div>
-        <div class="header__right flex-v-centered">
-            <div class="header__auth">
-                <div class="header__auth-controls">
-                    <a class="login_link" data-toggle="modal" data-target="#modal-access"><span class="ic_login"><img src="./assets/icons/ic_login_1.svg"></span><span class="name_login">Имя пользователя</span></a>
-                </div>
-            </div>
-            <div class="header__time-zone dropdown">
-                <!--                        <div class="header__tz-select">-->
-                <div class="dropdown__icon-clock grey-effect"><img src="./assets/icons/clock.svg" alt="clock-icon" /></div>
-                <div class="tz-select__default" id="js-tz-toogle">15:41 (GMT+1)</div>
-                <ul class="tz-select__dropdown dropdown--base m-color tz-close" id="js-tz-dropdown">
-
-                    <li class="tz-select__item dropdown--item-style grey-effect" data-tz="16:41 (GMT+2)">16:41 (GMT+2)</li>
-                    <li class="tz-select__item dropdown--item-style grey-effect" data-tz="17:41 (GMT+3)">17:41 (GMT+3)</li>
-                    <li class="tz-select__item dropdown--item-style grey-effect" data-tz="18:41 (GMT+4)">18:41 (GMT+4)</li>
-                    <li class="tz-select__item dropdown--item-style grey-effect" data-tz="19:41 (GMT+5)">19:41 (GMT+5)</li>
-                    <li class="tz-select__item dropdown--item-style grey-effect" data-tz="20:41 (GMT+6)">20:41 (GMT+6)</li>
-                </ul>
-                <!--                        </div>-->
-
-            </div>
-
-            <div class="header__intl dropdown">
-
-                <div class="intl__default icon--size"><img id="js-intl-toggle" src="./assets/icons/flags/ru.svg" alt="flag-default" /></div>
-                <ul class="intl__dropdown dropdown--base m-color tz-close" id="js-intl-dropdown">
-
-                    <li class="intl__item dropdown--item-style" data-intl="./assets/icons/flags/de.svg"><img class="icon--size" src="./assets/icons/flags/de.svg" alt="flag-default" /><span>DE</span></li>
-                    <li class="intl__item dropdown--item-style" data-intl="./assets/icons/flags/dk.svg"><img class="icon--size" src="./assets/icons/flags/dk.svg" alt="flag-default" /><span>DK</span></li>
-                    <li class="intl__item dropdown--item-style" data-intl="./assets/icons/flags/en.svg"><img class="icon--size" src="./assets/icons/flags/en.svg" alt="flag-default" /><span>EN</span></li>
-                    <li class="intl__item dropdown--item-style" data-intl="./assets/icons/flags/es.svg"><img class="icon--size" src="./assets/icons/flags/es.svg" alt="flag-default" /><span>ES</span></li>
-                    <li class="intl__item dropdown--item-style" data-intl="./assets/icons/flags/gr.svg"><img class="icon--size" src="./assets/icons/flags/gr.svg" alt="flag-default" /><span>GR</span></li>
-                    <li class="intl__item dropdown--item-style" data-intl="./assets/icons/flags/it.svg"><img class="icon--size" src="./assets/icons/flags/it.svg" alt="flag-default" /><span>IT</span></li>
-                    <li class="intl__item dropdown--item-style" data-intl="./assets/icons/flags/pt.svg"><img class="icon--size" src="./assets/icons/flags/pt.svg" alt="flag-default" /><span>PT</span></li>
-                    <li class="intl__item dropdown--item-style" data-intl="./assets/icons/flags/se.svg"><img class="icon--size" src="./assets/icons/flags/se.svg" alt="flag-default" /><span>SE</span></li>
-                    <li class="intl__item dropdown--item-style" data-intl="./assets/icons/flags/ru.svg"><img class="icon--size" src="./assets/icons/flags/ru.svg" alt="flag-default" /><span>RU</span></li>
-                </ul>
-            </div>
-        </div>
-    </header>
-    <div class="main-content">
-        <div class="header">
+        <div class="header header-menu">
             <div class="header__burger-left burger-menu js-open-menu">
                 <img src="./assets/ic_m_l_1.svg" alt="burger" />
             </div>
@@ -119,9 +77,50 @@
                     </a>
                 </div>
             </div>
-            <div class="header__burger-right burger-menu js-open-menu"></div>
         </div>
+        <div class="overlay"></div>
+        <div class="header__right flex-v-centered">
+            <div class="header__auth">
+                <div class="header__auth-controls">
+                    <a class="login_link" data-toggle="modal" data-target="#modal-access"><span class="ic_login"><img src="./assets/icons/ic_login_1.svg"></span><span class="name_login">Имя пользователя</span></a>
+                </div>
+            </div>
+            <div class="header__time-zone dropdown">
+                <!--                        <div class="header__tz-select">-->
+                <div class="dropdown__icon-clock grey-effect"><img src="./assets/icons/clock.svg" alt="clock-icon" /></div>
+                <div class="tz-select__default" id="js-tz-toogle">15:41 (GMT+1)</div>
+                <ul class="tz-select__dropdown dropdown--base m-color tz-close" id="js-tz-dropdown">
 
+                    <li class="tz-select__item dropdown--item-style grey-effect" data-tz="16:41 (GMT+2)">16:41 (GMT+2)</li>
+                    <li class="tz-select__item dropdown--item-style grey-effect" data-tz="17:41 (GMT+3)">17:41 (GMT+3)</li>
+                    <li class="tz-select__item dropdown--item-style grey-effect" data-tz="18:41 (GMT+4)">18:41 (GMT+4)</li>
+                    <li class="tz-select__item dropdown--item-style grey-effect" data-tz="19:41 (GMT+5)">19:41 (GMT+5)</li>
+                    <li class="tz-select__item dropdown--item-style grey-effect" data-tz="20:41 (GMT+6)">20:41 (GMT+6)</li>
+                </ul>
+                <!--                        </div>-->
+
+            </div>
+
+            <div class="header__intl dropdown">
+
+                <div class="intl__default icon--size"><img id="js-intl-toggle" src="./assets/icons/flags/ru.svg" alt="flag-default" /></div>
+                <ul class="intl__dropdown dropdown--base m-color tz-close" id="js-intl-dropdown">
+
+                    <li class="intl__item dropdown--item-style" data-intl="./assets/icons/flags/de.svg"><img class="icon--size" src="./assets/icons/flags/de.svg" alt="flag-default" /><span>DE</span></li>
+                    <li class="intl__item dropdown--item-style" data-intl="./assets/icons/flags/dk.svg"><img class="icon--size" src="./assets/icons/flags/dk.svg" alt="flag-default" /><span>DK</span></li>
+                    <li class="intl__item dropdown--item-style" data-intl="./assets/icons/flags/en.svg"><img class="icon--size" src="./assets/icons/flags/en.svg" alt="flag-default" /><span>EN</span></li>
+                    <li class="intl__item dropdown--item-style" data-intl="./assets/icons/flags/es.svg"><img class="icon--size" src="./assets/icons/flags/es.svg" alt="flag-default" /><span>ES</span></li>
+                    <li class="intl__item dropdown--item-style" data-intl="./assets/icons/flags/gr.svg"><img class="icon--size" src="./assets/icons/flags/gr.svg" alt="flag-default" /><span>GR</span></li>
+                    <li class="intl__item dropdown--item-style" data-intl="./assets/icons/flags/it.svg"><img class="icon--size" src="./assets/icons/flags/it.svg" alt="flag-default" /><span>IT</span></li>
+                    <li class="intl__item dropdown--item-style" data-intl="./assets/icons/flags/pt.svg"><img class="icon--size" src="./assets/icons/flags/pt.svg" alt="flag-default" /><span>PT</span></li>
+                    <li class="intl__item dropdown--item-style" data-intl="./assets/icons/flags/se.svg"><img class="icon--size" src="./assets/icons/flags/se.svg" alt="flag-default" /><span>SE</span></li>
+                    <li class="intl__item dropdown--item-style" data-intl="./assets/icons/flags/ru.svg"><img class="icon--size" src="./assets/icons/flags/ru.svg" alt="flag-default" /><span>RU</span></li>
+                </ul>
+            </div>
+        </div>
+        <div class="header__burger-right burger-menu js-open-menu"></div>
+    </header>
+    <div class="main-content">
         <div class="modal m-closed">
             <form action="" class="login__form form">
                 <div class="form__wrapper">

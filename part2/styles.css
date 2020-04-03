@@ -65,9 +65,9 @@ div.header{
   /*display: flex;*/
 }
 .content {
-  height: calc(100vh - 37px);
+  height: calc(100vh - 140px);
   overflow: auto;
-  padding: 50px 20px 20px 20px;
+  padding: 50px;
   margin-left: auto;
   -webkit-transition: 0.2s ease-in-out;
   -o-transition: 0.2s ease-in-out;
@@ -88,9 +88,11 @@ div.header{
 }
 
 .scroll {
-  height: calc(100vh - 140px);
   overflow-x: hidden;
   overflow-y: auto;
+}
+.scroll:hover{
+  height: calc(100vh - 140px);
 }
 .aside {
   position: fixed;
@@ -112,8 +114,18 @@ div.header{
 
 .aside__nav-item {
   position: relative;
-  padding: 10px 20px 10px 8px;
+  /* padding: 10px 20px 10px 8px; */
   border-bottom: 1px solid #171e52;
+  transition: all 300ms;
+}
+.aside__nav-item:hover{
+  /* padding-left: 20px;   */
+  padding: 0px;
+  transition: all 300ms;
+  background-color: #1a1d29;  
+}
+.aside__nav-item:hover a{
+  padding: 10px 20px 10px 32px;
 }
 .aside__nav-item:before {
   content: "";
@@ -143,13 +155,15 @@ div.header{
   display: flex;
   align-items: center;
   color: #fff;
-  width: 300px;
+  width: 400px;
   opacity: 0.6;
-  padding-left: 13px;
+  transition: all 300ms;
+  padding: 10px 20px 10px 20px;
 }
 .aside__title {
   word-break: keep-all;
   overflow-x: hidden;
+  text-transform: uppercase;
 }
 .aside__numbers {
   margin-left: auto;
@@ -212,6 +226,7 @@ top-menu
 }
 .main-menu__image {
   height: 33px;
+  padding-top: 5px;
   margin-bottom: 10px;
 }
 .burger-menu {
@@ -441,12 +456,12 @@ top-menu
   .form__wrapper {
     width: 80%;
   }
-  .aside.left:hover ~ .content {
+ /*  .aside.left:hover ~ .content {
     width: calc(100% - 340px);
     -webkit-transition: 0.3s ease-in-out;
     -o-transition: 0.3s ease-in-out;
     transition: 0.3s ease-in-out;
-  }
+  } */
   .content {
     width: calc(100% - 80px);
   }
